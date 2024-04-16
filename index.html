@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¿Quieres ser mi novia?</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f3f3f3;
+    padding-bottom: 50px;
+  }
+  #question {
+    font-size: 24px;
+  }
+  .button {
+    font-size: 18px;
+    margin: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    transition: left 0.3s, top 0.3s; /* Transición suave de movimiento */
+  }
+  #no:hover {
+    left: calc(-50% + 50px); /* Movimiento hacia la izquierda al pasar el cursor */
+    top: calc(-50% + 50px); /* Movimiento hacia arriba al pasar el cursor */
+  }
+  #piolin {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+  }
+  #bar {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    font-size: 20px;
+  }
+</style>
+</head>
+<body>
+
+<p id="question">¿Quieres ser mi novia?</p>
+<button class="button" onclick="replyYes()">Sí</button>
+<button id="no" class="button" onclick="moveNo()">No</button>
+<img id="piolin" src="https://www.pngkey.com/png/full/127-1271205_piolin-png-transparent-background-piolin.png" alt="Piolín">
+
+<div id="bar">RUKA PACO</div>
+
+<script>
+  function replyYes() {
+    alert("¡Te amo!");
+  }
+
+  function moveNo() {
+    var button = document.getElementById("no");
+    var newX = Math.random() * (window.innerWidth - button.offsetWidth);
+    var newY = Math.random() * (window.innerHeight - button.offsetHeight);
+    button.style.left = newX + "px";
+    button.style.top = newY + "px";
+  }
+</script>
+
+</body>
+</html>
