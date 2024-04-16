@@ -1,8 +1,46 @@
-body {
-    margin: 0;
-    overflow: hidden;
-  }
+body{
+  margin: 0;
+  padding: 0;
+}
   canvas {
     display: block;
   }
+
+header{
+  text-align: center;
+  border: solid 2px black;
+
+}
+  header .container{
+     width: 30%;
+    height: 50%;
+
+   }
   
+ main{
+  background-color: cadetblue;
+  height: 100%;
+  border: solid 2px black;
+
+  
+}
+.container-main{
+  height: auto;
+  padding: 0;
+  margin: 0;
+  
+}
+.container-main h1{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.container-main h1{
+    font-size: medium;
+}
+.container-main img{
+  width: 500px;
+  height: 250px;
+  margin-left: 35%;
+  
+}
